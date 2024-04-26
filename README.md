@@ -1,0 +1,1 @@
+[Projeto Simplificado para a Disciplina de Banco de Dados Relacional.pdf](https://github.com/JPacolla376/ProjetoBD_Relacional/files/15131299/Projeto.Simplificado.para.a.Disciplina.de.Banco.de.Dados.Relacional.pdf)
