@@ -1,21 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href=".css/main.css">
   <title>OrganizaMente</title>
+  <link rel="stylesheet" href="main.css">
 </head>
-<body>
-    <header class="manu-principal">
-        <main>
-          <div class="logo">
-            <img src="" alt="">
-          </div>
-            <div class=" redes-sociais">
 
-          </div>
-       </main>
-    </header>
+<body>
+
+  <header>
+    <a href="https://www.facebook.com/">Facebook</a>
+    <a href="https://twitter.com/">Twitter</a>
+    <a href="https://www.instagram.com/">Instagram</a>
+  </header>
+
+  <div class="container">
+    <h1>To Do List</h1>
+
+    <!-- Formulário para adicionar tarefas -->
+    <form action="adicionar_tarefa.php" method="POST">
+      <input type="text" name="title" placeholder="Título" required>
+      <textarea name="description" placeholder="Descrição"></textarea>
+      <input type="date" name="due_date" required>
+      <button type="submit">Adicionar Tarefa</button>
+    </form>
+
+    <!-- Listagem de tarefas -->
+    <ul>
+      <?php
+      // Aqui você pode adicionar o código PHP para listar as tarefas do banco de dados
+      // Por exemplo:
+      // foreach ($tarefas as $tarefa) {
+      //   echo "<li>{$tarefa['title']} - {$tarefa['description']} - {$tarefa['due_date']}</li>";
+      // }
+      ?>
+    </ul>
+  </div>
+
+  <footer>
+    &copy; 2024 OrganizaMente. Todos os direitos reservados.
+  </footer>
+
 </body>
+
 </html>
