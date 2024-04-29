@@ -11,15 +11,26 @@
 <body>
 
   <header>
+    <img src="" alt="" larg="">
     <a href="https://www.facebook.com/">Facebook</a>
     <a href="https://twitter.com/">Twitter</a>
     <a href="https://www.instagram.com/">Instagram</a>
   </header>
 
   <div class="container">
-    <h1>To Do List</h1>
+    <h1>
+      <center>OrganizaMente</center>
+    </h1>
+    <div class="btn">
+      <main>
+        <button type="button" class="btn btn-one">Estudos</button>
+        <button type="button" class="btn btn-second">Familia</button>
+        <button type="button" class="btn btn-third">Compromissos</button>
+        <button type="button" class="btn btn-room">Vida Social</button>
+        <button type="button" class="btn btn-link">Link</button>
+      </main>
+    </div>
 
-    <!-- Formulário para adicionar tarefas -->
     <form action="adicionar_tarefa.php" method="POST">
       <input type="text" name="title" placeholder="Título" required>
       <textarea name="description" placeholder="Descrição"></textarea>
@@ -27,10 +38,10 @@
       <button type="submit">Adicionar Tarefa</button>
     </form>
 
-    <!-- Listagem de tarefas -->
+
     <ul>
       <?php
-      // Aqui você pode adicionar o código PHP para listar as tarefas do banco de dados
+      // Adicionar o código PHP para listar as tarefas do banco de dados
       // Por exemplo:
       // foreach ($tarefas as $tarefa) {
       //   echo "<li>{$tarefa['title']} - {$tarefa['description']} - {$tarefa['due_date']}</li>";
@@ -40,7 +51,7 @@
   </div>
 
   <footer>
-    &copy; 2024 OrganizaMente. Todos os direitos reservados.
+    &copy; 2024 OrganizaMente. Todos os direitos reservados por João Pacolla.
   </footer>
 
 </body>

@@ -1,25 +1,18 @@
-/* Estilos para o header */
 header {
     background-color: #222;
-    /* Verde escuro */
     color: #fff;
-    /* Branco */
     padding: 10px;
-    text-align: center;
+    text-align: right;
 }
 
-/* Estilos para os links do header */
 header a {
     color: #fff;
-    /* Branco */
     text-decoration: none;
     margin: 0 10px;
 }
 
-/* Estilos para o formulário */
 form {
     background-color: #f9f9f9;
-    /* Cinza claro */
     padding: 20px;
     border-radius: 8px;
     margin: 20px auto;
@@ -44,9 +37,7 @@ form textarea {
 
 form button {
     background-color: #ff7f50;
-    /* Laranja */
     color: #fff;
-    /* Branco */
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
@@ -56,20 +47,47 @@ form button {
 
 form button:hover {
     background-color: #ff6347;
-    /* Tom mais escuro de laranja ao passar o mouse */
+
 }
 
-/* Estilos para o footer */
+
 footer {
     background-color: #222;
-    /* Verde escuro */
     color: #fff;
-    /* Branco */
     padding: 10px;
     text-align: center;
     position: fixed;
     bottom: 0;
     width: 100%;
     margin-top: 20px;
-    /* Adiciona margem superior para evitar sobreposição com o conteúdo */
+}
+
+.btn {
+    border-bottom-color: #0d6efd;
+    text-align: center;
+    padding: 0.2cm;
+}
+
+.btn-one {
+    background-color: red;
+    text-align: center;
+}
+
+.btn-second {
+    background-color: yellow;
+    text-align: center;
+}
+
+.btn-third {
+    background-color: grey;
+    text-align: center;
+}
+
+.btn-room {
+    background-color: green;
+    text-align: center;
+}
+
+.btn-link {
+    background-color: crimson;
 }
