@@ -1,0 +1,46 @@
+.container-home {
+    background-color: black;
+}
+
+.btn-one {
+    background-color: #ff4b08;
+    text-align: center;
+
+}
+
+.btn-second {
+    background-color: #ff4b08
+}
+
+.btn-third {
+    background-color: #ff4b08;
+    text-align: center;
+}
+
+.btn-room {
+    background-color: #ff4b08;
+    text-align: center;
+}
+
+.fs-4 {
+    color: #ff4b08;
+}
+
+.nav-link {
+    color: #ff4b08;
+}
+
+.btnAdc {
+    background-color: #ff4b08;
+    color: rgb(255, 255, 255);
+    border: none;
+    margin-right: 40px;
+}
+
+.btnAdc:hover {
+    background-color: #ca3c08;
+}
+
+.btnAdc:active {
+    background-color: #ca3c08;
+}
