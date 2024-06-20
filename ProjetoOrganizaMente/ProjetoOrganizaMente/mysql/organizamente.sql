@@ -32,4 +32,4 @@ END //
 
 DELIMITER ;
 
-/* Fazer uma view de relatório temporario */
+/* Fazer uma view de relatório temporario PDF */
