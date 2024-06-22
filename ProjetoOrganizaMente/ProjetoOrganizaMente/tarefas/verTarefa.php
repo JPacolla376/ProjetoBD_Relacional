@@ -6,11 +6,13 @@ if (!isset($_SESSION['usuario_id'])) {
     exit();
 }
 
-include '../Login/db.php';
+include '../mysql/db.php';
 
 $user_id = $_SESSION['usuario_id'];
 
-$stmt = $conn->prepare("CALL listagem(?)");
+// Consulta à view ou procedure para obter as tarefas do usuário
+$sql = "SELECT id, descricao, tema, data_conclusao FROM vw_listagem_tarefas WHERE usuario_id = ?";
+$stmt = $conn->prepare($sql);
 $stmt->bind_param("i", $user_id);
 $stmt->execute();
 $result = $stmt->get_result();
@@ -29,6 +31,10 @@ $result = $stmt->get_result();
 <body>
 <div class="container mt-5">
     <h1 class="text-center mb-4">Minhas Tarefas</h1>
+    <div class="text-center">
+        <a href="gerar_relatorio.php" class="btn btn-primary">Gerar Relatório PDF</a>
+    </div>
+    <br>    
     <table class="table table-bordered">
         <thead>
             <tr>
