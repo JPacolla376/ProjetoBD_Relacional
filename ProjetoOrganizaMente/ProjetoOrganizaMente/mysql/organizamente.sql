@@ -32,4 +32,7 @@ END //
 
 DELIMITER ;
 
-/* Fazer uma view de relatório temporario PDF */
+CREATE VIEW vw_listagem_tarefas AS
+SELECT id, descricao, tema, data_conclusao
+FROM listas;
+
